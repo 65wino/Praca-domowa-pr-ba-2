@@ -5,7 +5,7 @@
     <title>Formularz - Wiktor Brokos</title>
 </head>
 <body style="background-color:#f9f9ff; font-family:Arial;">
-    <h1>Formularz zgłoszeniowy-Praca jako budowlaniec</h1> 
+    <h1>Formularz zgłoszeniowy-Pracownik budowlany</h1> 
 
 <TABLE>
 <h2>1.Dane osobowe</h2> 
@@ -33,99 +33,74 @@
                                <b>PESEL(opcjonalne)</b>  
 <input name="imie" size="22">  
                                <br><br> 
-<h2>2.Stanowisko i dostępność</h2>
-                               <b>Stanowisko,na które się zgłaszasz</b>  
- <select> 
-                                 <option value="Kierownik budowy">Kierownik budowy</option> 
-                                 <option value="Inspektor nadzoru budowlanego">Inspektor nadzoru budowlanego</option> 
-                                 <option value="Inżynier Budowy">Inżynier Budowy</option> 
-                                 <option value="Kierownik robót sanitarnych">Kierownik robót sanitarnych</option> 
-                                 <option value="Kierownik robót mostowych">Kierownik robót mostowych</option> 
-                                 <option value="Kierownik robót hydrotechnicznych">Kierownik robót hydrotechnicznych</option> 
-                              </select>    
-                               <br><br>
-                              <b>Gotowość do rozpoczęcia pracy</b> 
-<input type="date">   
-                               <br><br> 
-<b>Preferowany rodzaj umowy</b> 
- <br><br> 
- <input type="radio" name="pyt3" value="tak"> Umowa o pracę 
- <br><br> 
- <input type="radio" name="pyt3" value="nie"> Umowa zlecenie  
-<br><br> 
- <input type="radio" name="pyt3" value="tak"> Działalność gospodarcza
-<br><br>  
- <input type="radio" name="pyt3" value="tak"> Inne
-<br><br> 
-<b>Gotowość do delegacji</b>
- <br><br> 
- <input type="radio" name="pyt3" value="tak"> Tak 
- <br><br> 
- <input type="radio" name="pyt3" value="nie"> Nie 
-<br><br> 
-<b>Posiadane prawo jazdy</b>
- <br><br> 
- <input type="radio" name="pyt3" value="tak"> Tak 
- <br><br> 
- <input type="radio" name="pyt3" value="nie"> Nie 
-<br><br> 
- 
-                           </TD>
-  
-                        <center><h2>3.Doświadczenie zawodowe</h2>
+  <h2>2. Stanowisko i dostępność</h2>
+  Stanowisko, na które się zgłaszasz:<br>
+  <select name="stanowisko">
+    <option value="">-- wybierz --</option>
+    <option value="Kierownik budowy">Kierownik budowy</option>
+    <option value="Inspektor">Inspektor nadzoru budowlanego</option>
+    <option value="Inżynier">Inżynier Budowy</option>
+    <option value="Sanitarne">Kierownik robót sanitarnych</option>
+    <option value="Mostowe">Kierownik robót mostowych</option>
+    <option value="Hydrotechniczne">Kierownik robót hydrotechnicznych</option>
+  </select><br><br>
 
-                               <b>Stanowisko</b>  
-<input name="imie" size="22">  
-                               <br><br>
-                               <b>Okres zatrudnienia:od do</b>
-<input name="imie" size="22">  
-                               <br><br>
-                               <b>Zakres obowiązków</b>  
-<input name="imie" size="22">  
-                               <br><br>
-<h2>4.Umiejętność i uprawnienia</h2>
-                               <br><br>
- <input type="checkbox" name="Obsługa maszyn" value="k"><b>Obsługa maszyn budowlanych(jakich?)</b>  
-<input name="imie" size="22">
-<br><br>
-<input type="checkbox" name="Uprwanienia" value="k"><b>Uprawnienia SEP/wysokościowe/spawalnicze(jakie?)</b>  
-<input name="imie" size="22">
-<br><br>
-</center> 
-                          <TD width="100">Jaka jest Twoja ulubione ciastko? 
- <br><br> 
- <input type="checkbox" name="ciastko" value="k"> BEZA 
- <br><br> 
- <input type="checkbox" name="ciastko" value="m"> SERNIK 
- <br><br> 
- <input type="checkbox" name="ciastko" value="inna"> INNE 
- <br><br><br> 
- 
- <nobr>Jeśli zaznaczyłeś INNE to podaj swoje ciastko<br>wpisz ciastko poniżej. Maks: 
-100<br>znaków</nobr> 
- <br><br> 
- <input name="inna" size="25" maxlength="100"> 
-  </TD>
-        </TR> 
- <TR height="200"> 
- 
-                          <TD>podaj czas  &nbsp &nbsp &nbsp &nbsp<input type="time"><br>  
-                              podaj datę  &nbsp &nbsp &nbsp&nbsp &nbsp<input type="date"> <br>    
-                              wybierz kolor  &nbsp &nbsp<input type="color"> <br>   </TD>  
-                          <TD>  jaka jest wilgotność   <input type="range"> <br> 
-                                 Proszę czekać...&nbsp &nbsp &nbsp &nbsp <progress>Proszę 
- 
- 
-Opracowanie mgr inż. Marek Kryniewski ZSE 
+  Gotowość do rozpoczęcia pracy: <input type="date" name="start"><br><br>
 
-czekać...</progress>            </TD> 
+  Preferowany rodzaj umowy:<br>
+  <input type="radio" name="umowa" value="praca"> Umowa o pracę<br>
+  <input type="radio" name="umowa" value="zlecenie"> Umowa zlecenie<br>
+  <input type="radio" name="umowa" value="dzialalnosc"> Działalność gospodarcza<br>
+  <input type="radio" name="umowa" value="inne"> Inne<br><br>
+
+  Gotowość do delegacji:<br>
+  <input type="radio" name="delegacja" value="tak"> Tak
+  <input type="radio" name="delegacja" value="nie"> Nie<br><br>
+
+  Posiadane prawo jazdy:<br>
+  <input type="radio" name="prawojazdy" value="tak"> Tak
+  <input type="radio" name="prawojazdy" value="nie"> Nie<br><br>
+</td>
+
+<!-- ŚRODKOWA KOLUMNA (3 i 4) -->
+<td width="33%">
+  <h2>3. Doświadczenie zawodowe</h2>
+  Stanowisko: <input type="text" name="dosw1"><br><br>
+  Okres zatrudnienia (od–do): <input type="text" name="okres1"><br><br>
+  Zakres obowiązków:<br>
+  <textarea name="obowiazki1" rows="3" cols="30"></textarea><br><br>
+
+  Stanowisko: <input type="text" name="dosw2"><br><br>
+  Okres zatrudnienia (od–do): <input type="text" name="okres2"><br><br>
+  Zakres obowiązków:<br>
+  <textarea name="obowiazki2" rows="3" cols="30"></textarea><br><br>
+
+  <h2>4. Umiejętności i uprawnienia</h2>
+  <input type="checkbox" name="umiejetnosci" value="maszyny"> Obsługa maszyn budowlanych<br>
+  <input type="checkbox" name="umiejetnosci" value="sep"> Uprawnienia SEP / wysokościowe / spawalnicze<br>
+  <input type="checkbox" name="umiejetnosci" value="rysunek"> Znajomość rysunku technicznego<br>
+  <input type="checkbox" name="umiejetnosci" value="inne"> Inne<br>
+</td>
+
+<!-- PRAWA KOLUMNA (5 i 6) -->
+<td width="33%">
+  <h2>5. Wykształcenie</h2>
+  Szkoła / Uczelnia: <input type="text" name="szkola"><br><br>
+  Kierunek: <input type="text" name="kierunek"><br><br>
+  Lata nauki: <input type="text" name="lata"><br><br>
+  Uzyskany tytuł: <input type="text" name="tytul"><br><br>
+
+  <h2>6. Zgody i podpis</h2>
+  <input type="checkbox" name="rodo" required> 
+  Wyrażam zgodę na przetwarzanie moich danych osobowych dla potrzeb rekrutacji (RODO).<br><br>
+
+  Data: <input type="date" name="data"><br><br>
+  Podpis: <input type="text" name="podpis"><br><br>
+</td>
         </TR> 
-  <TR height="400"> 
-                          <TD>dwa             </TD>  
-                          <TD> B                    </TD>  
-                          <TD> drugi                </TD> 
-        </TR> 
-  </TABLE> 
+ 
+  </TABLE>
+</tr> </table> <center> <br> <input type="submit" value="Wyślij zgłoszenie"> <input type="reset" value="Wyczyść formularz"> </center> 
 </form> 
  </body> 
 </html>
